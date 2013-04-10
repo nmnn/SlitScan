@@ -1,9 +1,10 @@
 #include "testApp.h"
 
+//set variables
 int video_width     = 320;
 int video_height    = 240;
 int video_slice_x   = video_width/2;
-int window_width    = 400;
+int window_width    = 240;
 int window_height   = video_height;
 int draw_position_x = 0;
 bool newFrame       = false;
@@ -21,8 +22,6 @@ void testApp::setup(){
 
     texture.allocate(window_width, window_height, GL_RGB);
     texpixels = new unsigned char [window_width * window_height * 3];
-
-    //ofSetFrameRate(1000);
 }
 
 //--------------------------------------------------------------
